@@ -1,0 +1,52 @@
+<svg width="640" height="380" viewBox="0 0 640 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="380" rx="16" fill="#0F1117" stroke="rgba(255,255,255,0.08)"/>
+  
+  <!-- Top bar -->
+  <rect width="640" height="44" rx="16" fill="#161922"/>
+  <circle cx="24" cy="22" r="5" fill="#EF4444"/>
+  <circle cx="40" cy="22" r="5" fill="#F59E0B"/>
+  <circle cx="56" cy="22" r="5" fill="#10B981"/>
+  <text x="80" y="26" fill="#94A3B8" font-family="monospace" font-size="11">perplexity.ai / search / quel-airfryer-choisir-2026</text>
+  
+  <!-- Prompt User -->
+  <g transform="translate(24, 64)">
+    <rect width="592" height="44" rx="10" fill="#1A1E29" stroke="rgba(255,255,255,0.06)"/>
+    <text x="16" y="27" fill="#F8FAFC" font-family="sans-serif" font-size="13" font-weight="500">👤 Quel est le meilleur Airfryer familial sans compromis sur la cuisson en 2026 ?</text>
+  </g>
+  
+  <!-- Citations row -->
+  <g transform="translate(24, 122)">
+    <text x="0" y="12" fill="#64748B" font-family="sans-serif" font-size="11" font-weight="600">SOURCES ÉTUDIÉES :</text>
+    
+    <!-- Source 1: Les Numeriques -->
+    <rect x="110" y="-3" width="145" height="24" rx="6" fill="rgba(59,130,246,0.15)" stroke="rgba(59,130,246,0.3)"/>
+    <circle cx="122" cy="9" r="4" fill="#3B82F6"/>
+    <text x="132" y="13" fill="#93C5FD" font-family="sans-serif" font-size="11" font-weight="600">1. Les Numériques [Guide]</text>
+    
+    <!-- Source 2: Marmiton -->
+    <rect x="263" y="-3" width="135" height="24" rx="6" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.3)"/>
+    <circle cx="275" cy="9" r="4" fill="#F59E0B"/>
+    <text x="285" y="13" fill="#FCD34D" font-family="sans-serif" font-size="11" font-weight="600">2. Marmiton [Avis]</text>
+    
+    <!-- Source 3: Maison & Travaux -->
+    <rect x="406" y="-3" width="155" height="24" rx="6" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)"/>
+    <circle cx="418" cy="9" r="4" fill="#10B981"/>
+    <text x="428" y="13" fill="#6EE7B7" font-family="sans-serif" font-size="11" font-weight="600">3. Maison &amp; Travaux [Test]</text>
+  </g>
+  
+  <!-- LLM Answer Body -->
+  <g transform="translate(24, 165)">
+    <rect width="592" height="185" rx="10" fill="#12151D" stroke="rgba(59,130,246,0.2)"/>
+    
+    <text x="20" y="28" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="700">⚡ SYNTHÈSE DES BANCS D'ESSAIS INDÉPENDANTS :</text>
+    
+    <text x="20" y="54" fill="#F8FAFC" font-family="sans-serif" font-size="13" font-weight="600">D'après les mesures réalisées par Les Numériques et les retours culinaires de Marmiton :</text>
+    
+    <text x="20" y="80" fill="#94A3B8" font-family="sans-serif" font-size="12">• <tspan fill="#F8FAFC" font-weight="700">Le choix N°1 recommandé</tspan> est votre modèle : noté 5 étoiles pour l'homogénéité thermique et le bac XL anti-adhésif.</text>
+    <text x="20" y="105" fill="#94A3B8" font-family="sans-serif" font-size="12">• <tspan fill="#F8FAFC" font-weight="700">Rapport Qualité/Prix :</tspan> Les tests de Maison &amp; Travaux confirment une consommation 40% inférieure aux fours classiques.</text>
+    <text x="20" y="130" fill="#94A3B8" font-family="sans-serif" font-size="12">• <tspan fill="#F8FAFC" font-weight="700">Accessibilité :</tspan> Des recettes exclusives sont certifiées sur Marmiton garantissant une prise en main immédiate.</text>
+    
+    <line x1="20" y1="148" x2="572" y2="148" stroke="rgba(255,255,255,0.06)"/>
+    <text x="20" y="168" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="600">✓ Taux de recommandation IA : 94% des requêtes d'intention d'achat en France</text>
+  </g>
+</svg>
