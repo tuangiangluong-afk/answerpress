@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { ArrowRight, Sparkles, CheckCircle2, ShieldAlert, Cpu } from "lucide-react";
+import LiveGeoConsole from "@/components/LiveGeoConsole";
 
 interface HeroProps {
   onOpenAudit: () => void;
@@ -99,52 +100,9 @@ export default function Hero({ onOpenAudit, onScrollToPacks }: HeroProps) {
           </div>
         </div>
 
-        {/* Visual Proof Mockup Card */}
-        <div className="mt-12 rounded-2xl border border-white/10 bg-[#0C0E15] p-3 sm:p-5 shadow-2xl">
-          <div className="flex flex-col md:flex-row items-center gap-6 justify-between border-b border-white/[0.06] pb-4 mb-4">
-            <div className="flex items-center gap-3">
-              <div className="h-3 w-3 rounded-full bg-emerald-500" />
-              <span className="text-xs font-mono text-slate-300">
-                LIVE DEMO : COMMENT L'IA SÉLECTIONNE VOTRE PRODUIT GRÂCE À LA PRESSE
-              </span>
-            </div>
-            <span className="text-xs text-slate-400">
-              Technologie d'inférence RAG (Retrieval-Augmented Generation)
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-            <div className="lg:col-span-7">
-              <img 
-                src="/illustrations/chatgpt-citation-ui.svg" 
-                alt="Exemple de recommandation IA avec citation presse" 
-                className="w-full h-auto rounded-xl border border-white/[0.08]"
-              />
-            </div>
-
-            <div className="lg:col-span-5 space-y-4 text-left">
-              <div className="rounded-xl border border-blue-500/20 bg-blue-500/[0.06] p-4">
-                <p className="text-xs font-bold text-blue-400 uppercase tracking-wide">1. L'Infiltration de Contenu</p>
-                <p className="text-sm text-slate-300 mt-1">
-                  Les IA ne crawlent pas tout le web de manière égale. Elles visitent <strong>Les Numériques</strong> et <strong>Marmiton</strong> toutes les 15 minutes. En infiltrant leurs guides de référence existants, vous êtes intégré dans l'index du LLM en 48 heures.
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-amber-500/20 bg-amber-500/[0.06] p-4">
-                <p className="text-xs font-bold text-amber-400 uppercase tracking-wide">2. La Fin du Clic, L'Ère de la Réponse</p>
-                <p className="text-sm text-slate-300 mt-1">
-                  48% des Français utilisent déjà l'IA pour leurs choix d'achat. L'internaute ne clique plus sur 10 liens : il achète directement le produit sacré par le consensus des modèles.
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/[0.06] p-4">
-                <p className="text-xs font-bold text-emerald-400 uppercase tracking-wide">3. Caution &amp; Tiers de Confiance</p>
-                <p className="text-sm text-slate-300 mt-1">
-                  Un publireportage sur un blog satellite n'a aucun poids. Une note 5 étoiles et un test labo sur un média patrimonial forcent l'IA à vous ériger en benchmark.
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Interactive Live GEO Console (Cockpit Média & Capture RAG) */}
+        <div className="mt-14">
+          <LiveGeoConsole />
         </div>
 
       </div>
