@@ -2,69 +2,56 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 interface HeaderProps {
   onOpenAudit?: () => void;
 }
 
+const NAV_LINKS = [
+  { href: "/medias", label: "Inventaire Titres" },
+  { href: "/tarifs", label: "Packages & Tarifs" },
+  { href: "/methodologie", label: "L'Équation GEO" },
+  { href: "/cas-clients", label: "Bancs d'Essai" },
+  { href: "/guides", label: "Guides" },
+];
+
 export default function Header({ onOpenAudit }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-200/80 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-16">
-        
-        {/* Brand Logo - Pure & Minimalist */}
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center shadow-xs">
-            <span className="font-mono text-xs font-bold text-white tracking-wider">AP</span>
-          </div>
-          <span className="text-base font-bold tracking-tight text-neutral-900">
-            AnswerPress<span className="text-blue-600 font-normal">.io</span>
+    <header className="sticky top-0 z-50 w-full bg-paper/95 backdrop-blur-md border-b border-ink/15">
+      {/* Filet double façon manchette */}
+      <div className="h-[3px] border-t border-b border-ink/70" />
+
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-[72px]">
+        {/* Logo — manchette */}
+        <Link href="/" className="flex items-baseline gap-2.5">
+          <span className="press-title text-2xl leading-none">
+            AnswerPress<span className="text-press">.</span>
           </span>
-          <span className="hidden sm:inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-[10px] font-mono font-semibold text-neutral-600 border border-neutral-200">
-            Centrale GEO
+          <span className="hidden sm:inline text-[10px] font-semibold uppercase tracking-[0.22em] text-stone">
+            Centrale d&apos;Autorité Média
           </span>
         </Link>
 
-        {/* Desktop Nav with Pill Links */}
-        <nav className="hidden md:flex items-center gap-1 bg-neutral-100/80 p-1 rounded-full border border-neutral-200/60">
-          <Link 
-            href="/medias" 
-            className="rounded-full px-3.5 py-1.5 text-xs font-semibold text-neutral-600 hover:text-neutral-900 hover:bg-white transition-all"
-          >
-            Inventaire Titres
-          </Link>
-          <Link 
-            href="/tarifs" 
-            className="rounded-full px-3.5 py-1.5 text-xs font-semibold text-neutral-600 hover:text-neutral-900 hover:bg-white transition-all"
-          >
-            Packages &amp; Tarifs
-          </Link>
-          <Link 
-            href="/methodologie" 
-            className="rounded-full px-3.5 py-1.5 text-xs font-semibold text-neutral-600 hover:text-neutral-900 hover:bg-white transition-all"
-          >
-            L'Équation GEO
-          </Link>
-          <Link 
-            href="/cas-clients" 
-            className="rounded-full px-3.5 py-1.5 text-xs font-semibold text-neutral-600 hover:text-neutral-900 hover:bg-white transition-all"
-          >
-            Bancs d'Essai
-          </Link>
+        {/* Navigation — liens éditoriaux */}
+        <nav className="hidden md:flex items-center gap-8">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-[11px] font-semibold uppercase tracking-[0.14em] text-graphite hover:text-press border-b border-transparent hover:border-press pb-0.5 transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
-        {/* Pill Action Button */}
+        {/* Action */}
         <div className="hidden md:flex items-center gap-3">
-          <button
-            onClick={onOpenAudit}
-            className="btn-pill-primary px-4 py-2 text-xs"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-blue-300" />
-            <span>Tester mon Indice IA</span>
-            <ArrowRight className="w-3 h-3 text-neutral-400" />
+          <button onClick={onOpenAudit} className="btn-press btn-press-ink !py-2.5 !px-5">
+            Tester mon Indice IA
           </button>
         </div>
 
@@ -72,7 +59,7 @@ export default function Header({ onOpenAudit }: HeaderProps) {
         <div className="flex md:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-neutral-700 hover:text-neutral-900"
+            className="p-2 text-ink hover:text-press"
             aria-label="Menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -82,44 +69,25 @@ export default function Header({ onOpenAudit }: HeaderProps) {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-neutral-200 bg-white px-4 pt-3 pb-6 space-y-2">
-          <Link
-            href="/medias"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-semibold text-neutral-700 hover:text-neutral-900 py-1.5"
-          >
-            Inventaire Titres
-          </Link>
-          <Link
-            href="/tarifs"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-semibold text-neutral-700 hover:text-neutral-900 py-1.5"
-          >
-            Packages &amp; Tarifs
-          </Link>
-          <Link
-            href="/methodologie"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-semibold text-neutral-700 hover:text-neutral-900 py-1.5"
-          >
-            L'Équation GEO
-          </Link>
-          <Link
-            href="/cas-clients"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-semibold text-neutral-700 hover:text-neutral-900 py-1.5"
-          >
-            Bancs d'Essai (Tefal, Philips...)
-          </Link>
-          <div className="pt-2">
+        <div className="md:hidden border-t border-ink/15 bg-paper px-4 pt-4 pb-6 space-y-3">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-[12px] font-semibold uppercase tracking-[0.14em] text-graphite hover:text-press py-1.5 border-b border-ink/10"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="pt-3">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenAudit && onOpenAudit();
               }}
-              className="w-full btn-pill-primary py-2.5 text-xs font-bold"
+              className="w-full btn-press btn-press-ink"
             >
-              <Sparkles className="w-3.5 h-3.5 text-blue-300" />
               Tester mon Indice IA
             </button>
           </div>

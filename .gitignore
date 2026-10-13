@@ -31,6 +31,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# leads capturés localement
+/var/
+
 # scratch & screenshots
 .freebuff/
 .playwright-cli/

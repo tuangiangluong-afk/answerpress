@@ -9,6 +9,8 @@ import PackagingSection from "@/components/PackagingSection";
 import TheGeoEquation from "@/components/TheGeoEquation";
 import FormatShowcase from "@/components/FormatShowcase";
 import CaseStudiesProof from "@/components/CaseStudiesProof";
+import FaqSection from "@/components/FaqSection";
+import GuidesTeaser from "@/components/GuidesTeaser";
 import LeadModal from "@/components/LeadModal";
 import Footer from "@/components/Footer";
 
@@ -48,7 +50,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="min-h-screen bg-paper text-ink">
       {/* Header */}
       <Header onOpenAudit={handleOpenGeneralAudit} />
 
@@ -79,6 +81,12 @@ export default function HomePage() {
 
       {/* Case Studies & Real Benchmarks */}
       <CaseStudiesProof onOpenAudit={handleOpenGeneralAudit} />
+
+      {/* FAQ — search-intent questions (SEO + GEO) */}
+      <FaqSection onOpenAudit={handleOpenGeneralAudit} />
+
+      {/* Guides & ressources */}
+      <GuidesTeaser />
 
       {/* Footer */}
       <Footer />

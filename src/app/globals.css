@@ -1,22 +1,25 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --bg-main: #fafaf9;
-    --bg-card: #ffffff;
-    --border-subtle: #e7e5e4;
-    --border-strong: #d6d3d1;
-    --text-primary: #1c1917;
-    --text-secondary: #57534e;
-    --text-muted: #78716c;
-    --accent-blue: #2563eb;
-    --accent-blue-hover: #1d4ed8;
-  }
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
 
+  /* Palette « media kit presse » */
+  --color-paper: #f5f0e8;
+  --color-paper-alt: #ece4d7;
+  --color-ink: #17181d;
+  --color-graphite: #4b4f58;
+  --color-stone: #82858e;
+  --color-press: #b3242b;
+  --color-press-dark: #8e1b21;
+  --color-line: rgba(23, 24, 29, 0.16);
+}
+
+@layer base {
   body {
-    background-color: var(--bg-main);
-    color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -24,89 +27,180 @@
   }
 
   ::selection {
-    background-color: #2563eb;
+    background-color: var(--color-press);
     color: #ffffff;
   }
 }
 
-.font-mono-num {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-feature-settings: "tnum" 1, "zero" 1;
-}
-
-/* Modern Pill Button Utilities */
-.btn-pill-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border-radius: 9999px;
-  background-color: #0f172a;
-  color: #ffffff;
+/* ————— Titraille & sur-titres ————— */
+.press-title {
+  font-family: var(--font-display);
   font-weight: 600;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
-  cursor: pointer;
+  letter-spacing: -0.015em;
+  line-height: 1.06;
+  color: var(--color-ink);
 }
 
-.btn-pill-primary:hover {
-  background-color: #1e293b;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
-}
-
-.btn-pill-primary:active {
-  transform: translateY(0);
-}
-
-.btn-pill-blue {
+.press-eyebrow {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border-radius: 9999px;
-  background-color: #2563eb;
-  color: #ffffff;
+  gap: 0.85rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.2);
-  cursor: pointer;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-press);
 }
 
-.btn-pill-blue:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+.press-eyebrow::before {
+  content: "";
+  width: 2.25rem;
+  height: 1px;
+  background: var(--color-press);
+  flex-shrink: 0;
 }
 
-.btn-pill-secondary {
+.press-kicker {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-graphite);
+}
+
+.press-num {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-variant-numeric: lining-nums;
+}
+
+/* ————— Boutons : rectangulaires, presse ————— */
+.btn-press {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  border-radius: 9999px;
+  gap: 0.65rem;
+  border-radius: 2px;
+  padding: 0.95rem 1.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.btn-press-red {
+  background-color: var(--color-press);
+  color: #ffffff;
+  border: 1px solid var(--color-press);
+}
+
+.btn-press-red:hover {
+  background-color: var(--color-press-dark);
+  border-color: var(--color-press-dark);
+}
+
+.btn-press-ink {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  border: 1px solid var(--color-ink);
+}
+
+.btn-press-ink:hover {
+  background-color: var(--color-press);
+  border-color: var(--color-press);
+}
+
+.btn-press-outline {
+  background-color: transparent;
+  color: var(--color-ink);
+  border: 1px solid rgba(23, 24, 29, 0.35);
+}
+
+.btn-press-outline:hover {
+  border-color: var(--color-ink);
+  background-color: rgba(23, 24, 29, 0.05);
+}
+
+/* ————— Cartes & filets ————— */
+.press-card {
   background-color: #ffffff;
-  color: #1e293b;
-  border: 1px solid #e2e8f0;
-  font-weight: 600;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-  cursor: pointer;
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
 }
 
-.btn-pill-secondary:hover {
-  background-color: #f8fafc;
-  border-color: #cbd5e1;
-  transform: translateY(-1px);
+.press-rule {
+  border: none;
+  border-top: 1px solid var(--color-line);
+  margin: 0;
 }
 
-.badge-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-  border-radius: 9999px;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
+.press-rule-double {
+  border: none;
+  border-top: 3px double rgba(23, 24, 29, 0.35);
+  margin: 0;
+}
+
+.fig-caption {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.72rem;
+  color: var(--color-stone);
+}
+
+/* ————— Formulaires : champs éditoriaux ————— */
+.press-field {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid rgba(23, 24, 29, 0.22);
+  border-radius: 2px;
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  color: var(--color-ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.press-field::placeholder {
+  color: #9a9da5;
+  font-style: italic;
+}
+
+.press-field:focus {
+  outline: none;
+  border-color: var(--color-press);
+  box-shadow: 0 0 0 3px rgba(179, 36, 43, 0.12);
+}
+
+.press-label {
+  display: block;
+  font-size: 0.66rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-graphite);
+  margin-bottom: 0.4rem;
+}
+
+/* ————— Chiffres & tableaux façon carte tarifaire ————— */
+.press-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.press-table th {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid rgba(23, 24, 29, 0.35);
+}
+
+.press-table td {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: top;
 }

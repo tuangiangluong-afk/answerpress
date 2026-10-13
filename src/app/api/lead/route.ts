@@ -1,31 +1,66 @@
 import { NextResponse } from "next/server";
+import { promises as fs } from "fs";
+import path from "path";
+
+const LEADS_DIR = path.join(process.cwd(), "var");
+const LEADS_FILE = path.join(LEADS_DIR, "leads.jsonl");
+
+async function persistLead(record: Record<string, unknown>) {
+  await fs.mkdir(LEADS_DIR, { recursive: true });
+  await fs.appendFile(LEADS_FILE, JSON.stringify(record) + "\n", "utf8");
+}
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, company, phone, selectedPlan, selectedPrice, notes } = body;
+    const {
+      name,
+      email,
+      company,
+      phone,
+      selectedPlan,
+      selectedPrice,
+      notes,
+      source,
+      diagnostic,
+      trap,
+    } = body;
 
-    if (!name || !email || !company) {
+    // Honeypot : champ caché rempli = bot, on répond succès sans rien enregistrer.
+    if (trap) {
+      return NextResponse.json({ success: true });
+    }
+
+    if (!email || typeof email !== "string" || !email.includes("@")) {
+      return NextResponse.json(
+        { error: "Une adresse email valide est obligatoire." },
+        { status: 400 }
+      );
+    }
+
+    if (!source && (!name || !company)) {
       return NextResponse.json(
         { error: "Le nom, l'email et l'entreprise sont obligatoires." },
         { status: 400 }
       );
     }
 
-    // Lead capture log / database dispatch
     const leadRecord = {
       id: "AP-" + Date.now().toString(36).toUpperCase(),
-      name,
+      source: source || "lead-form",
+      name: name || null,
       email,
-      company,
+      company: company || null,
       phone: phone || null,
       selectedPlan: selectedPlan || "Général",
       selectedPrice: selectedPrice || null,
       notes: notes || null,
+      diagnostic: diagnostic || null,
       createdAt: new Date().toISOString(),
     };
 
-    console.log("[AnswerPress] Nouveau lead qualifié reçu :", leadRecord);
+    await persistLead(leadRecord);
+    console.log("[AnswerPress] Nouveau lead qualifié enregistré :", leadRecord.id);
 
     return NextResponse.json({
       success: true,
@@ -33,8 +68,9 @@ export async function POST(req: Request) {
       leadId: leadRecord.id,
     });
   } catch (err: any) {
+    console.error("[AnswerPress] Erreur capture lead :", err);
     return NextResponse.json(
-      { error: "Erreur lors de la capture du lead.", detail: err.message },
+      { error: "Erreur lors de la capture du lead.", detail: err?.message },
       { status: 500 }
     );
   }
