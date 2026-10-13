@@ -11,6 +11,7 @@ import FormatShowcase from "@/components/FormatShowcase";
 import CaseStudiesProof from "@/components/CaseStudiesProof";
 import FaqSection from "@/components/FaqSection";
 import GuidesTeaser from "@/components/GuidesTeaser";
+import UrgencyCtaSection from "@/components/UrgencyCtaSection";
 import LeadModal from "@/components/LeadModal";
 import Footer from "@/components/Footer";
 
@@ -28,6 +29,12 @@ export default function HomePage() {
     } else {
       setModalOpen(true);
     }
+  };
+
+  const handleOpenExecutiveAudit = () => {
+    setSelectedPlan("Audit Exécutif Board-Ready (Gratuit sous 24h)");
+    setSelectedPrice("Offert");
+    setModalOpen(true);
   };
 
   const handleScrollToPacks = () => {
@@ -87,6 +94,9 @@ export default function HomePage() {
 
       {/* Guides & ressources */}
       <GuidesTeaser />
+
+      {/* Pre-Footer Scarcity & Conversion Urgency */}
+      <UrgencyCtaSection onOpenAudit={handleOpenExecutiveAudit} />
 
       {/* Footer */}
       <Footer />

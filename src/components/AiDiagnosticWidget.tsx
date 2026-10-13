@@ -7,6 +7,13 @@ interface AiDiagnosticWidgetProps {
   onSuccessLead?: (data: any) => void;
 }
 
+const PRESET_DUELS = [
+  { label: "Airfryers : Moulinex vs Ninja", brand: "Moulinex", comp1: "Ninja", comp2: "Philips", sector: "food" },
+  { label: "Aspirateurs : Rowenta vs Dyson", brand: "Rowenta", comp1: "Dyson", comp2: "Roborock", sector: "tech" },
+  { label: "Cafetières : Krups vs De'Longhi", brand: "Krups", comp1: "De'Longhi", comp2: "Sage", sector: "food" },
+  { label: "Literie : Tediber vs Emma", brand: "Tediber", comp1: "Emma", comp2: "Simba", sector: "maison" },
+];
+
 export default function AiDiagnosticWidget({ onSuccessLead }: AiDiagnosticWidgetProps) {
   const [brandName, setBrandName] = useState("");
   const [websiteUrl, setWebsiteUrl] = useState("");
@@ -17,6 +24,14 @@ export default function AiDiagnosticWidget({ onSuccessLead }: AiDiagnosticWidget
 
   const [isScanning, setIsScanning] = useState(false);
   const [scanResult, setScanResult] = useState<any | null>(null);
+
+  const handleLoadDuel = (duel: typeof PRESET_DUELS[0]) => {
+    setBrandName(duel.brand);
+    setCompetitor1(duel.comp1);
+    setCompetitor2(duel.comp2);
+    setSector(duel.sector);
+    setWebsiteUrl(`https://www.${duel.brand.toLowerCase().replace(/[^a-z0-9]/g, '')}.fr`);
+  };
 
   const handleRunScan = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -105,10 +120,34 @@ export default function AiDiagnosticWidget({ onSuccessLead }: AiDiagnosticWidget
         {/* Formulaire / résultat */}
         <div className="mt-12 press-card border-ink/25 p-6 sm:p-10">
             {!scanResult ? (
-              <form onSubmit={handleRunScan} className="space-y-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="press-label">Nom de votre marque / produit *</label>
+              <div>
+                {/* 1-Click Duels Presets */}
+                <div className="mb-6 pb-6 border-b border-ink/10">
+                  <p className="text-[11px] font-mono uppercase tracking-wider text-graphite mb-2.5">
+                    Tester un duel de marché en 1 clic :
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {PRESET_DUELS.map((duel) => (
+                      <button
+                        key={duel.label}
+                        type="button"
+                        onClick={() => handleLoadDuel(duel)}
+                        className={`text-xs px-3 py-1.5 border transition-all text-left ${
+                          brandName === duel.brand
+                            ? "bg-ink text-white border-ink font-medium"
+                            : "bg-surface-subtle text-ink border-ink/15 hover:border-ink/40 hover:bg-surface"
+                        }`}
+                      >
+                        {duel.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <form onSubmit={handleRunScan} className="space-y-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <label className="press-label">Nom de votre marque / produit *</label>
                     <input
                       type="text"
                       required
@@ -196,7 +235,8 @@ export default function AiDiagnosticWidget({ onSuccessLead }: AiDiagnosticWidget
                   </button>
                 </div>
               </form>
-            ) : (
+            </div>
+          ) : (
               <div className="space-y-7">
                 {/* En-tête résultat */}
                 <div className="flex items-center justify-between border-b border-ink/15 pb-4">
