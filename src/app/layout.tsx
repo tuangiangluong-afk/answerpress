@@ -72,8 +72,26 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: "AnswerPress",
   url: "https://answerpress.io",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://answerpress.io/apple-icon.png",
+    width: 512,
+    height: 512,
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/answerpress",
+    "https://twitter.com/answerpress_io",
+    "https://github.com/tuangiangluong-afk/answerpress",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Direction Médias & Stratégie",
+    email: "contact@answerpress.io",
+    areaServed: "FR",
+    availableLanguage: ["fr", "en"],
+  },
   description:
-    "Centrale d'autorité média et de citations IA (GEO) : infiltration de marques dans les guides et bancs d'essai des grands médias français pour saturer les moteurs génératifs.",
+    "Agence conseil indépendante en autorité média et de citations IA (GEO) : infiltration de marques dans les guides et bancs d'essai des grands médias français pour saturer les moteurs génératifs.",
   areaServed: "FR",
   knowsAbout: [
     "Generative Engine Optimization",
@@ -81,7 +99,23 @@ const organizationJsonLd = {
     "Autorité média",
     "Netlinking IA",
     "Visibilité ChatGPT",
+    "Retrieval-Augmented Generation",
   ],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "AnswerPress",
+  url: "https://answerpress.io",
+  inLanguage: "fr-FR",
+  description:
+    "Agence conseil indépendante en autorité média & référencement génératif (GEO). Activation de Reworld Media, Prisma & partenaires.",
+  publisher: {
+    "@type": "Organization",
+    name: "AnswerPress",
+    url: "https://answerpress.io",
+  },
 };
 
 const serviceJsonLd = {
@@ -112,6 +146,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
         <script
           type="application/ld+json"

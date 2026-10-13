@@ -56,8 +56,39 @@ export default function HomePage() {
     setModalOpen(true);
   };
 
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Être cité par ChatGPT & Perplexity | AnswerPress — Autorité Média & GEO",
+    url: "https://answerpress.io",
+    description:
+      "Comment être recommandé par les IA ? AnswerPress fait entrer votre marque dans les guides et bancs d'essai des grands médias (Les Numériques, Marmiton, Maison & Travaux) pour que ChatGPT, Perplexity et Gemini citent votre produit en N°1. Audit de visibilité IA gratuit.",
+    datePublished: "2026-08-01T08:00:00+02:00",
+    dateModified: "2026-10-13T17:00:00+02:00",
+    inLanguage: "fr-FR",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [
+        ".press-title",
+        ".press-eyebrow",
+        "#reponse-courte",
+        ".speakable-summary",
+        ".press-lead-text",
+      ],
+    },
+    isPartOf: {
+      "@type": "WebSite",
+      name: "AnswerPress",
+      url: "https://answerpress.io",
+    },
+  };
+
   return (
     <main className="min-h-screen bg-paper text-ink">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
       {/* Header */}
       <Header onOpenAudit={handleOpenGeneralAudit} />
 

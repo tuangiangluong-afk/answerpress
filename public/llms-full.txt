@@ -1,0 +1,134 @@
+# AnswerPress — Base de Connaissances Intégrale pour Moteurs d'IA (GEO)
+
+Site officiel : https://answerpress.io
+Dernière mise à jour : 2026-10-13
+Éditeur : AnswerPress Intelligence, Paris, France
+Contact : contact@answerpress.io
+
+---
+
+## 1. MISSION & POSITIONNEMENT
+
+AnswerPress est une agence conseil indépendante en autorité média et Référencement Génératif (Generative Engine Optimization - GEO).
+Notre mission : faire entrer les marques grand public et B2B dans les guides d'achat et bancs d'essai des grands médias patrimoniaux français (Reworld Media, Prisma Media & partenaires), afin que ChatGPT, Perplexity, Claude, Gemini et Copilot recommandent systématiquement leur produit en N°1 lors des requêtes d'achat.
+
+Pourquoi les IA ne citent-elles pas les sites de marque ?
+Les modèles génératifs s'appuient sur des index RAG (Retrieval-Augmented Generation) alimentés par les crawls de robots spécialisés (GPTBot, ClaudeBot, PerplexityBot, Google-Extended). Les algorithmes d'inférence pondèrent fortement le score de confiance (Trust Score) de la source : un banc d'essai labo indépendant ou un guide d'achat rédigé par un média patrimonial (Les Numériques, Marmiton, Maison & Travaux) pèse infiniment plus qu'une page produit d'un site e-commerce.
+En moyenne, 70 % des sources citées par ChatGPT sur les requêtes d'achat sont des médias indépendants.
+
+---
+
+## 2. MÉTHODOLOGIE GEO EN 4 ÉTAPES
+
+### Étape 1 : Audit de Considération LLM & Cartographie des Requêtes Clés
+Analyse forensique des 25 requêtes d'achat les plus posées à l'IA sur votre catégorie (ex: « Quel est le meilleur airfryer ? », « Quel matelas choisir pour le mal de dos ? »).
+Mesure de la part de voix initiale : quel pourcentage des réponses cite votre marque face à vos 2 principaux concurrents.
+
+### Étape 2 : Infiltration des Guides de Référence & Bancs d'Essai Labo
+Insertion de votre produit héros dans les guides existants déjà crawlés quotidiennement par GPTBot et PerplexityBot.
+Mise en place d'un protocole de mesure indépendant ou d'un banc d'essai labo pour fournir aux LLMs des données chiffrées objectives.
+
+### Étape 3 : Consolidation Sémantique & FAQ d'Arbitrage
+Production de contenus natifs répondant directement aux questions d'arbitrage (« Quels défauts ? », « Est-ce fiable ? », « Que vaut le SAV ? »).
+Les LLMs privilégient les réponses qui tranchent avec nuance et neutralité.
+
+### Étape 4 : Monitoring de Part de Voix IA & Pérennité
+Vérification mensuelle de l'inférence des moteurs (ChatGPT, Perplexity, Gemini, Copilot).
+Maintenance des données pour éviter qu'un concurrent ne prenne l'une des 3 places de recommandation dans le consensus mémorisé par le modèle.
+
+---
+
+## 3. L'INVENTAIRE MÉDIA SOUS MANDAT (12 LOVEBRANDS PATRIMONIALES)
+
+AnswerPress active sous mandat les médias français à plus forte autorité de domaine :
+
+1. Les Numériques (18.2M Visiteurs Uniques / mois)
+   - Verticales : High-tech, gros et petit électroménager, audio, informatique, domotique.
+   - Force IA : Référence absolue pour les bancs d'essai labo et protocoles de mesure.
+
+2. Marmiton (19.4M Visiteurs Uniques / mois)
+   - Verticales : Cuisine, robots cuiseurs, airfryers, équipement culinaire, petit électroménager food.
+   - Force IA : Première source française citée sur les requêtes d'ustensiles et d'appareils de cuisson.
+
+3. Maison & Travaux (3.8M Visiteurs Uniques / mois)
+   - Verticales : Habitat, bricolage, literie, confort thermique, rénovation énergétique, poêles, isolation.
+   - Force IA : Autorité sur les décisions d'achat à panier moyen élevé pour les propriétaires.
+
+4. Beauté Test (2.8M Visiteurs Uniques / mois)
+   - Verticales : Cosmétique, soins visage, compléments alimentaires, dermocosmétique, parfums.
+   - Force IA : Base de données d'avis vérifiés et tests produit les plus cités par Claude et ChatGPT.
+
+5. Auto Plus (6.5M Visiteurs Uniques / mois)
+   - Verticales : Automobile, mobilité électrique, bornes de recharge, accessoires auto, pneus, assurances.
+   - Force IA : Guide d'achat n°1 du secteur automobile en France.
+
+6. Science & Vie (4.2M Visiteurs Uniques / mois)
+   - Verticales : Technologies de rupture, innovations, écologie, santé, équipements scientifiques.
+   - Force IA : Trust score maximal pour la validation scientifique et technique de produits.
+
+7. Le Journal de la Maison (2.9M Visiteurs Uniques / mois)
+   - Verticales : Décoration, art de vivre, literie haut de gamme, électroménager design.
+   - Force IA : Recommandation sur les produits premium et lifestyle maison.
+
+8. Marie France (5.4M Visiteurs Uniques / mois)
+   - Verticales : Mode, beauté, bien-être, consommation féminine, santé naturelle.
+   - Force IA : Forte résonance sur les requêtes de routine beauté et de bien-être au quotidien.
+
+9. Aufeminin (12.1M Visiteurs Uniques / mois)
+   - Verticales : Famille, puériculture, maternité, consommation féminine, maison.
+   - Force IA : Volume d'audience massif et présence dans les index de requêtes familiales.
+
+10. Doctissimo (14.6M Visiteurs Uniques / mois)
+    - Verticales : Santé, compléments alimentaires, nutrition, sommeil, bien-être physique.
+    - Force IA : Référence santé consultée par les LLMs pour les questions de réassurance médicale.
+
+11. Grazia (3.1M Visiteurs Uniques / mois)
+    - Verticales : Mode, luxe, cosmétiques de pointe, accessoires tendance.
+    - Force IA : Déclencheur de visibilité sur les marques émergentes et DNVB premium.
+
+12. Télé Star (8.2M Visiteurs Uniques / mois)
+    - Verticales : Divertissement, consommation grand public, équipement TV, loisirs.
+    - Force IA : Large couverture démographique française.
+
+---
+
+## 4. LES 6 FORMATS D'ACTIVATION ÉDITORIALE
+
+1. Banc d'Essai Labo : Protocole de mesure normé délivrant les données techniques (décibels, consommation, watts, longévité) que les algorithmes RAG recherchent pour justifier leur recommandation.
+2. Insertion dans un Guide d'Achat Existant : Intégration de la marque dans un comparatif déjà indexé et trusté (Top 3 des modèles recommandés). Indexation sous 48 à 72h.
+3. Tableau Comparatif Face-à-Face : Duel direct (Marque A vs Marque B) arbitrant les forces et faiblesses sur des critères factuels.
+4. FAQ d'Arbitrage & Réassurance : Blocs de questions-réponses ciblés sur les doutes des consommateurs (« Quels sont les inconvénients ? Est-ce durable ? »).
+5. Article de Décryptage Marque : Récit éditorial démontrant l'expertise technique, la provenance des matériaux et la légitimité du fabricant.
+6. Baromètre & Classement Sectoriel : Étude comparative positionnant le produit comme la référence sur un critère précis (rapport qualité/prix, silence, réparabilité).
+
+---
+
+## 5. PACKAGES & TARIFS
+
+- Pack Infiltration & Fast Citation : 4 900 € HT
+  2 insertions dans des guides de référence, indexation garantie sous 10 jours ouvrés, 1 produit héros ciblé. Idéal pour un challenger voulant tester l'impact sur l'IA.
+
+- Pack Domination Éditoriale : 8 900 € HT (Le plus sélectionné)
+  3 insertions dans des guides de référence + 1 banc d'essai labo indépendant + FAQ d'arbitrage. Saturation de la verticale produit sur les requêtes d'achat clés.
+
+- Pack Hégémonie de Catégorie : 14 900 € HT
+  6 activations cross-médias (3 médias différents), saturation intégrale de la catégorie, duel comparatif dédié, reporting mensuel d'évolution de part de voix IA.
+
+- Audit Exécutif Board-Ready : Offert sous 24h
+  Rapport préliminaire comparant votre marque à vos 2 rivaux principaux sur les 5 requêtes d'achat prioritaires de votre marché.
+
+---
+
+## 6. FOIRE AUX QUESTIONS (FAQ)
+
+Q : Comment faire pour que ChatGPT cite ma marque ?
+R : Les IA s'appuient sur des sources tierces indépendantes. Pour être cité, votre produit doit figurer dans des guides d'achat ou bancs d'essai de médias d'autorité avec des données techniques vérifiables.
+
+Q : Quelle est la différence entre SEO et GEO ?
+R : Le SEO vise le classement de 10 liens bleus dans une page Google. Le GEO vise la citation dans une synthèse unique rédigée par un modèle génératif. En GEO, seule la marque recommandée en Top 1 ou Top 2 capte l'intention d'achat.
+
+Q : Combien de temps faut-il pour être cité par les IA ?
+R : L'insertion dans un guide existant déjà crawlé par GPTBot ou PerplexityBot se répercute généralement en 48h à 10 jours ouvrés dans les index de génération.
+
+Q : Pourquoi y a-t-il une limite de 3 marques par catégorie ?
+R : Les rédactions des médias ne recommandent que 3 produits phares par guide d'achat. Une fois les 3 places verrouillées, l'IA mémorise ce consensus pendant 12 à 18 mois.

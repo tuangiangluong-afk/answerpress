@@ -25,7 +25,11 @@ export default function Hero({ onOpenAudit, onScrollToPacks }: HeroProps) {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Proposition de valeur */}
           <div className="lg:col-span-7">
-            <p className="press-eyebrow">Recommandation d&apos;Achat sur les IA</p>
+            <p className="press-eyebrow flex items-center gap-2">
+              <span>Recommandation d&apos;Achat sur les IA</span>
+              <span className="text-stone/40">&bull;</span>
+              <time dateTime="2026-10-13" className="text-stone">Édition Octobre 2026</time>
+            </p>
 
             <h1 className="press-title mt-6 text-[2.5rem] sm:text-6xl lg:text-[4.25rem]">
               Ne cherchez plus seulement à être cliqué.

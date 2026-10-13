@@ -1,0 +1,53 @@
+# AnswerPress
+
+> Centrale d'autorité média & Référencement Génératif (GEO). Nous activons les 12 lovebrands leaders (Reworld Media, Prisma Media & partenaires) pour que ChatGPT, Perplexity, Claude et Gemini recommandent votre marque en N°1.
+
+AnswerPress est une agence conseil indépendante spécialisée dans le référencement sur les intelligences artificielles (Generative Engine Optimization - GEO). Nous aidons les marques grand public et B2B à être citées et recommandées comme choix n°1 dans les réponses d'achat des LLMs.
+
+## Documentation & Guides Essentiels
+
+- [Méthodologie GEO 2026](https://answerpress.io/methodologie): L'équation mathématique du référencement IA, architecture RAG et protocole d'inférence.
+- [Comment être cité par ChatGPT](https://answerpress.io/guides/etre-cite-par-chatgpt): Méthode en 4 étapes pour infiltrer les sources RAG et verrouiller la recommandation d'achat.
+- [SEO vs GEO : Ce qui change](https://answerpress.io/guides/seo-vs-geo): Comparaison opérationnelle entre le classement de liens bleus et la citation IA.
+- [Mesurer sa part de voix IA](https://answerpress.io/guides/part-de-voix-ia): Protocole de tracking de citations sur ChatGPT, Perplexity et Copilot.
+- [Budget & Coût d'une stratégie GEO](https://answerpress.io/guides/cout-strategie-citations-ia): Modèles économiques et ROI comparé au SEA/Google Ads.
+
+## Inventaire Média Partenaire
+
+AnswerPress active sous mandat les médias patrimoniaux français les plus crawlés par GPTBot, PerplexityBot et Google-Extended :
+- [Les Numériques](https://answerpress.io/medias) (18.2M VU) : High-tech, électroménager, audio, informatique.
+- [Marmiton](https://answerpress.io/medias) (19.4M VU) : Cuisine, robots cuiseurs, food, équipement culinaire.
+- [Maison & Travaux](https://answerpress.io/medias) (3.8M VU) : Habitat, bricolage, literie, confort thermique.
+- [Beauté Test](https://answerpress.io/medias) (2.8M VU) : Cosmétique, soins, compléments, dermocosmétique.
+- [Auto Plus](https://answerpress.io/medias) (6.5M VU) : Automobile, mobilité, bornes de recharge, accessoires.
+- [Science & Vie](https://answerpress.io/medias) (4.2M VU) : Innovations, santé, environnement, équipements scientifiques.
+- [Le Journal de la Maison](https://answerpress.io/medias) (2.9M VU) : Décoration, aménagement, électroménager premium.
+- [Marie France](https://answerpress.io/medias) (5.4M VU) : Mode, lifestyle, beauté, bien-être.
+- [Aufeminin](https://answerpress.io/medias) (12.1M VU) : Consommation féminine, maternité, lifestyle.
+- [Doctissimo](https://answerpress.io/medias) (14.6M VU) : Santé, compléments, bien-être, forme.
+- [Grazia](https://answerpress.io/medias) (3.1M VU) : Luxe, tendances, cosmétique, mode.
+- [Télé Star](https://answerpress.io/medias) (8.2M VU) : Divertissement, consommation grand public.
+
+## Formats d'Activation Presse
+
+1. Banc d'Essai Labo : Mesures indépendantes et protocole normé générant les données techniques indispensables aux LLMs.
+2. Insertion Guide d'Achat : Intégration dans le Top 3 d'un comparatif existant déjà indexé et recrawlé quotidiennement par l'IA.
+3. Tableau Comparatif Face-à-Face : Duel frontal (Marque A vs Marque B) arbitrant les critères d'achat décisifs.
+4. FAQ d'Arbitrage & Réassurance : Réponses directes aux questions de doute (« Est-ce fiable ? Quels défauts ? ») crawlées par Perplexity.
+5. Article de Décryptage Marque : Focus éditorial sur l'innovation et la légitimité d'une marque.
+6. Baromètre & Classement Sectoriel : Étude chiffrée positionnant la marque en référence de marché.
+
+## Packages & Tarifs
+
+- Infiltration & Fast Citation (4 900 € HT) : 2 insertions dans des guides de référence, indexation garantie sous 10 jours.
+- Domination Éditoriale (8 900 € HT) : 3 insertions guides + 1 banc d'essai labo + FAQ d'arbitrage.
+- Hégémonie de Catégorie (14 900 € HT) : 6 activations cross-médias, saturation d'une verticale complète, monitoring mensuel de part de voix IA.
+
+## Outils & Diagnostics
+
+- [Diagnostic GEO Gratuit](https://answerpress.io/#diagnostic): Simulation instantanée de l'Indice de Considération LLM face à 2 concurrents.
+- [Études de Cas](https://answerpress.io/cas-clients): Résultats chiffrés sur Tefal, Philips, Rowenta et Atlantic.
+- Contact officiel : contact@answerpress.io — AnswerPress Intelligence, Paris, France.
+
+## Full Content
+- [Base Textuelle Intégrale](https://answerpress.io/llms-full.txt): Corpus textuel complet pour modèles d'inférence.

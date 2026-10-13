@@ -68,19 +68,20 @@ export default function Header({ onOpenAudit }: HeaderProps) {
         </nav>
 
         {/* Actions desktop & tablet */}
-        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <button
             onClick={handleAuditClick}
-            className="btn-press btn-press-ink !py-2 sm:!py-2.5 !px-3.5 sm:!px-5 text-[10px] sm:text-[11px] whitespace-nowrap shrink-0"
+            className="btn-press btn-press-ink !py-1.5 sm:!py-2.5 !px-2.5 sm:!px-5 text-[10px] sm:text-[11px] whitespace-nowrap shrink-0"
           >
-            <span>Tester mon Indice IA</span>
+            <span className="hidden sm:inline">Tester mon Indice IA</span>
+            <span className="sm:hidden">Audit IA</span>
             <ArrowRight className="w-3 h-3 hidden sm:inline" />
           </button>
 
           {/* Bouton Menu Mobile */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-ink hover:text-press transition-colors border border-ink/20 bg-paper-alt shrink-0"
+            className="lg:hidden p-1.5 sm:p-2 text-ink hover:text-press transition-colors border border-ink/20 bg-paper-alt shrink-0"
             aria-label="Menu de navigation"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
