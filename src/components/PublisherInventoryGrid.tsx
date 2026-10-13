@@ -210,6 +210,9 @@ export default function PublisherInventoryGrid({ onSelectMedia }: { onSelectMedi
             <br />
             comme sources prioritaires.
           </h2>
+          <p className="mt-4 text-graphite text-sm sm:text-base leading-relaxed">
+            En tant qu&apos;agence conseil indépendante, AnswerPress audite votre catégorie et active les Lovebrands du groupe Reworld Media (et régies partenaires) dont l&apos;autorité éditoriale verrouille les réponses d&apos;achat sur ChatGPT, Perplexity et Gemini.
+          </p>
         </div>
 
         {/* Filtres */}

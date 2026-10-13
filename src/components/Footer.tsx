@@ -13,8 +13,9 @@ export default function Footer() {
               AnswerPress<span className="text-press">.</span>
             </Link>
             <p className="mt-4 text-xs leading-relaxed max-w-xs">
-              Centrale d&apos;autorité média et de référencement génératif (GEO). Nous transformons
-              les requêtes d&apos;achat des IA en recommandations pour votre marque.
+              Agence conseil indépendante en autorité média &amp; référencement génératif (GEO).
+              Nous activons les Lovebrands leaders (Reworld Media, Prisma &amp; partenaires) pour
+              transformer les requêtes d&apos;achat des IA en recommandations pour votre marque.
             </p>
           </div>
 
