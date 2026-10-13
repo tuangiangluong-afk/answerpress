@@ -1,0 +1,39 @@
+<svg width="440" height="360" viewBox="0 0 440 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="440" height="360" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="20" y="32" fill="#0F172A" font-family="sans-serif" font-size="14" font-weight="700">Radar de Considération LLM</text>
+  <text x="20" y="48" fill="#64748B" font-family="sans-serif" font-size="11">Évaluation 12 critères vs Moyenne marché</text>
+  
+  <g transform="translate(220, 200)">
+    <!-- Circles -->
+    <circle r="100" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    <circle r="75" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    <circle r="50" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    <circle r="25" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Axes -->
+    <line x1="0" y1="-100" x2="0" y2="100" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="-70" y1="-70" x2="70" y2="70" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="-70" y1="70" x2="70" y2="-70" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Competitors (Dotted Red) -->
+    <polygon points="0,-55 45,-30 55,20 25,50 -35,40 -50,-20" fill="rgba(239,68,68,0.08)" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="3 3"/>
+    
+    <!-- Optimized Brand (Solid Blue) -->
+    <polygon points="0,-90 80,-50 85,35 50,80 -65,65 -80,-40" fill="rgba(37,99,235,0.15)" stroke="#2563EB" stroke-width="2"/>
+    
+    <!-- Labels -->
+    <text x="0" y="-108" text-anchor="middle" fill="#0F172A" font-family="sans-serif" font-size="9" font-weight="600">Autorité Presse (88/100)</text>
+    <text x="110" y="4" text-anchor="start" fill="#0F172A" font-family="sans-serif" font-size="9" font-weight="600">Banc d'Essai</text>
+    <text x="0" y="116" text-anchor="middle" fill="#0F172A" font-family="sans-serif" font-size="9" font-weight="600">Réassurance Prix / FAQ</text>
+    <text x="-110" y="4" text-anchor="end" fill="#0F172A" font-family="sans-serif" font-size="9" font-weight="600">Notoriété Citations</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(20, 328)">
+    <rect width="10" height="10" rx="2" fill="#2563EB"/>
+    <text x="16" y="9" fill="#0F172A" font-family="sans-serif" font-size="10" font-weight="600">Votre Marque (Pack AnswerPress)</text>
+    <rect x="220" width="10" height="10" rx="2" fill="#DC2626"/>
+    <text x="236" y="9" fill="#64748B" font-family="sans-serif" font-size="10">Concurrents Non-Médiatisés</text>
+  </g>
+</svg>

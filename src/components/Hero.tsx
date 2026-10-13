@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { ArrowRight, Sparkles, CheckCircle2, ShieldAlert, Cpu } from "lucide-react";
-import LiveGeoConsole from "@/components/LiveGeoConsole";
+import { ArrowRight, Sparkles, CheckCircle2, TrendingUp, Cpu, ShieldCheck } from "lucide-react";
+import { HeroMediaCockpit } from "@/components/HeroMediaCockpit";
 
 interface HeroProps {
   onOpenAudit: () => void;
@@ -11,100 +10,134 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenAudit, onScrollToPacks }: HeroProps) {
+  const publisherLogos = [
+    { name: "Les Numériques", img: "/media/publishers/les-numeriques.png", tag: "Tech" },
+    { name: "Marmiton", img: "/media/publishers/marmiton.png", tag: "Food" },
+    { name: "Maison & Travaux", img: "/media/publishers/maison-travaux.png", tag: "Maison" },
+    { name: "Beauté Test", img: "/media/publishers/beaute-test.png", tag: "Cosmétique" },
+    { name: "Science & Vie", img: "/media/publishers/science-vie.png", tag: "Science" },
+    { name: "Aufeminin", img: "/media/publishers/aufeminin.png", tag: "Féminin" },
+  ];
+
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 md:pt-18 md:pb-28">
-      {/* Background Subtle Gradient glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-blue-600/10 blur-[130px] rounded-full pointer-events-none -z-10" />
-      <div className="absolute top-1/3 right-1/4 w-[450px] h-[350px] bg-amber-500/5 blur-[120px] rounded-full pointer-events-none -z-10" />
+    <section className="relative overflow-hidden bg-[#FAFAF9] pt-12 pb-16 sm:pt-16 sm:pb-24 border-b border-neutral-200">
+      
+      {/* Subtle modern dot pattern */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.03]"
+        style={{
+          backgroundImage: `radial-gradient(#18181B 1px, transparent 1px)`,
+          backgroundSize: "24px 24px",
+        }}
+      />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Top Eyebrow Pill */}
-        <div className="flex items-center justify-center">
-          <div className="inline-flex items-center gap-2.5 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-300">
-            <Cpu className="w-3.5 h-3.5 text-blue-400" />
-            <span>NOUVEAU PARADIGME 2026 : LE GEO REMPLACE LES LIENS BLEUS</span>
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          {/* Left Column: Value Proposition (7 cols) */}
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
+            
+            {/* Pill Eyebrow */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-4 py-1.5 text-xs font-mono font-semibold text-blue-800 mb-6 shadow-2xs">
+              <span className="h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
+              <span>RÉVOLUTION GEO 2026 : LA FIN DU CLIC</span>
+            </div>
+
+            {/* H1 Headline */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-neutral-900 leading-[1.08] mb-6">
+              Ne cherchez plus à être cliqué. <br />
+              <span className="text-blue-600">Devenez la réponse citée par les IA.</span>
+            </h1>
+
+            {/* Subtitle */}
+            <p className="max-w-2xl text-base sm:text-lg text-neutral-600 leading-relaxed mb-8">
+              La 1ère centrale d’autorité média &amp; de citations IA. Nous infiltrons les guides et bancs d'essai des plus grands titres de presse (<span className="text-neutral-900 font-bold">Les Numériques</span>, <span className="text-neutral-900 font-bold">Marmiton</span>, <span className="text-neutral-900 font-bold">Maison &amp; Travaux</span>, <span className="text-neutral-900 font-bold">Beauté Test</span>) pour verrouiller la recommandation d'achat sur <span className="text-neutral-900 font-bold">ChatGPT, Perplexity et Copilot</span>.
+            </p>
+
+            {/* Pill CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto mb-10">
+              <button
+                onClick={onOpenAudit}
+                className="btn-pill-blue px-8 py-4 text-sm w-full sm:w-auto shadow-md hover:shadow-lg"
+              >
+                <Sparkles className="w-4 h-4 text-blue-200" />
+                <span>Simuler mon Indice de Citation IA</span>
+                <ArrowRight className="w-4 h-4 text-blue-200" />
+              </button>
+
+              <button
+                onClick={onScrollToPacks}
+                className="btn-pill-secondary px-7 py-4 text-sm w-full sm:w-auto"
+              >
+                <span>Voir les Packages (dès 4 900 €)</span>
+              </button>
+            </div>
+
+            {/* Publisher Visual Strip */}
+            <div className="w-full pt-8 border-t border-neutral-200 text-left">
+              <p className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-500 mb-4">
+                Diffusion certifiée sur les 12 lovebrands majeures :
+              </p>
+              
+              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2.5">
+                {publisherLogos.map((pub, idx) => (
+                  <div
+                    key={idx}
+                    className="relative group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-900 h-16 shadow-2xs hover:border-blue-400 transition-all cursor-pointer"
+                  >
+                    <img
+                      src={pub.img}
+                      alt={pub.name}
+                      className="w-full h-full object-cover opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                    <span className="absolute bottom-1 left-2 text-[10px] font-bold text-white tracking-tight truncate max-w-[90%]">
+                      {pub.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* 3 Trust Key Figures */}
+              <div className="grid grid-cols-3 gap-4 pt-6 mt-6 border-t border-neutral-100">
+                <div>
+                  <p className="text-2xl sm:text-3xl font-black text-neutral-900 font-mono-num">
+                    12M+
+                  </p>
+                  <p className="text-xs text-neutral-500 mt-0.5">
+                    Crawls IA par jour sur notre réseau
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-2xl sm:text-3xl font-black text-blue-600 font-mono-num">
+                    70%
+                  </p>
+                  <p className="text-xs text-neutral-500 mt-0.5">
+                    Des sources ChatGPT issues des médias
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-2xl sm:text-3xl font-black text-neutral-900 font-mono-num">
+                    4 900 €
+                  </p>
+                  <p className="text-xs text-neutral-500 mt-0.5">
+                    Packagé clé en main sous 10 jours
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
           </div>
+
+          {/* Right Column: HeroMediaCockpit (5 cols) */}
+          <div className="lg:col-span-5 w-full">
+            <HeroMediaCockpit />
+          </div>
+
         </div>
-
-        {/* Main Title & Subtitle */}
-        <div className="mt-8 text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
-            Ne cherchez plus à être cliqué. <br />
-            <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-sky-400 bg-clip-text text-transparent">
-              Devenez la réponse citée par les IA.
-            </span>
-          </h1>
-
-          <p className="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            La 1ère centrale d’autorité média &amp; GEO en France. Nous packageons les inventaires 
-            des plus grands titres de presse (<span className="text-white font-semibold">Les Numériques</span>, <span className="text-white font-semibold">Marmiton</span>, <span className="text-white font-semibold">Maison &amp; Travaux</span>, <span className="text-white font-semibold">Aufeminin</span>) pour saturer les moteurs génératifs (<span className="text-white font-semibold">ChatGPT</span>, <span className="text-white font-semibold">Perplexity</span>, <span className="text-white font-semibold">Copilot</span>).
-          </p>
-
-          {/* CTA Group */}
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={onOpenAudit}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-xl bg-blue-600 px-8 py-4 text-base font-bold text-white shadow-xl shadow-blue-500/25 hover:bg-blue-500 transition-all duration-200 hover:scale-[1.02] cursor-pointer"
-            >
-              <Sparkles className="w-5 h-5 text-blue-200" />
-              <span>Simuler mon Indice de Citation IA</span>
-              <ArrowRight className="w-4 h-4 text-blue-200" />
-            </button>
-
-            <button
-              onClick={onScrollToPacks}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-7 py-4 text-base font-semibold text-slate-200 hover:bg-white/[0.08] hover:text-white transition-all duration-200 cursor-pointer"
-            >
-              <span>Voir les Packages Média (dès 4 900 €)</span>
-            </button>
-          </div>
-
-          {/* Micro Trust Proof */}
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Zéro négociation régie de 3 mois
-            </span>
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Articles &amp; Infiltrations 100% Indexés RAG
-            </span>
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Audit &amp; Suivi AnswerShaper inclus
-            </span>
-          </div>
-        </div>
-
-        {/* Dynamic Metric Ticker Strip */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="glass-card rounded-2xl p-6 text-left">
-            <p className="text-xs uppercase tracking-wider font-semibold text-slate-400">Sollicitations Quotidiennes</p>
-            <p className="mt-2 text-3xl sm:text-4xl font-extrabold text-white font-mono-num">12M+</p>
-            <p className="mt-1 text-xs text-slate-400">crawls d’agents IA par jour sur nos marques partenaires</p>
-          </div>
-
-          <div className="glass-card rounded-2xl p-6 text-left">
-            <p className="text-xs uppercase tracking-wider font-semibold text-slate-400">Origine des Réponses GPT</p>
-            <p className="mt-2 text-3xl sm:text-4xl font-extrabold text-blue-400 font-mono-num">70%</p>
-            <p className="mt-1 text-xs text-slate-400">des sources citées par ChatGPT sont issues des médias</p>
-          </div>
-
-          <div className="glass-card rounded-2xl p-6 text-left">
-            <p className="text-xs uppercase tracking-wider font-semibold text-slate-400">Audience Intentionniste</p>
-            <p className="mt-2 text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono-num">34,5M</p>
-            <p className="mt-1 text-xs text-slate-400">visiteurs uniques/mois sur les verticales activées</p>
-          </div>
-
-          <div className="glass-card rounded-2xl p-6 text-left">
-            <p className="text-xs uppercase tracking-wider font-semibold text-slate-400">Ticket d'Entrée Packagé</p>
-            <p className="mt-2 text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono-num">4 900 €</p>
-            <p className="mt-1 text-xs text-slate-400">vs 50 000 € à 100 000 € en régie traditionnelle</p>
-          </div>
-        </div>
-
-        {/* Interactive Live GEO Console (Cockpit Média & Capture RAG) */}
-        <div className="mt-14">
-          <LiveGeoConsole />
-        </div>
-
       </div>
     </section>
   );

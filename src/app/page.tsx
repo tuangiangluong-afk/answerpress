@@ -48,7 +48,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#08090C] text-[#F8FAFC]">
+    <main className="min-h-screen bg-white text-slate-900">
       {/* Header */}
       <Header onOpenAudit={handleOpenGeneralAudit} />
 

@@ -1,134 +1,127 @@
 "use client";
 
 import React from "react";
-import { Cpu, Check, X, ShieldCheck, Zap, BookOpen, Layers } from "lucide-react";
+import { Cpu } from "lucide-react";
 
 export default function TheGeoEquation() {
   return (
-    <section id="methodologie" className="py-24 border-t border-white/[0.08] bg-[#08090C] relative">
+    <section id="methodologie" className="py-24 bg-white border-b border-neutral-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold text-emerald-300">
-            <Cpu className="w-3.5 h-3.5 text-emerald-400" />
+        <div className="max-w-3xl mb-14">
+          <div className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-100 px-4 py-1 text-xs font-mono font-semibold text-neutral-800">
+            <Cpu className="w-3.5 h-3.5 text-emerald-600" />
             <span>MÉTHODOLOGIE &amp; SCIENCE DU GEO</span>
           </div>
-          <h2 className="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          <h2 className="mt-4 text-3xl sm:text-5xl font-black tracking-tight text-neutral-900">
             La Nouvelle Équation du Référencement par l'IA.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-300">
-            Pourquoi vos techniques SEO traditionnelles ne fonctionnent plus sur ChatGPT, Perplexity et Copilot. 
-            Découvrez la formule mathématique qui régit l’apparition d’une marque dans la synthèse des modèles.
+          <p className="mt-3 text-base text-neutral-600">
+            Pourquoi le SEO traditionnel ne fonctionne plus sur ChatGPT et Perplexity : découvrez l'équation d'inférence RAG qui détermine la sélection d'une marque par les modèles.
           </p>
         </div>
 
         {/* The Equation Visual Box */}
-        <div className="mt-12 rounded-3xl border border-white/10 bg-gradient-to-br from-[#0F1422] to-[#0A0D15] p-6 sm:p-10 shadow-2xl">
-          <p className="text-xs font-mono uppercase text-blue-400 font-bold tracking-wider">
+        <div className="rounded-3xl border border-neutral-200 bg-[#FAFAF9] p-8 sm:p-12 shadow-xs mb-12">
+          <p className="text-xs font-mono uppercase text-blue-700 font-bold tracking-wider mb-6">
             FORMULE D'INFERENCE RAG (RETRIEVAL-AUGMENTED GENERATION)
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-center">
-            <div className="rounded-2xl border border-blue-500/30 bg-blue-500/10 px-5 py-4">
-              <span className="text-[11px] font-mono uppercase text-slate-400">Levier 1</span>
-              <p className="text-lg sm:text-xl font-black text-white">Axe Éditorial</p>
-              <span className="text-[10px] text-blue-300">Intentions d'achat réelles</span>
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-center">
+            <div className="rounded-2xl border border-blue-200 bg-white px-5 py-4 min-w-[160px] shadow-2xs">
+              <span className="text-[10px] font-mono uppercase text-neutral-500 font-semibold">Levier 1</span>
+              <p className="text-lg font-bold text-neutral-900 mt-0.5">Axe Éditorial</p>
+              <span className="rounded-full bg-blue-50 text-blue-700 px-2 py-0.5 text-[10px] font-medium">Intentions d'achat</span>
             </div>
 
-            <span className="text-2xl font-black text-slate-500">×</span>
+            <span className="text-2xl font-bold text-neutral-400">×</span>
 
-            <div className="rounded-2xl border border-amber-500/30 bg-amber-500/10 px-5 py-4">
-              <span className="text-[11px] font-mono uppercase text-slate-400">Levier 2</span>
-              <p className="text-lg sm:text-xl font-black text-white">Nature &amp; Formats</p>
-              <span className="text-[10px] text-amber-300">Bancs d'essais, FAQ, Tableaux</span>
+            <div className="rounded-2xl border border-amber-200 bg-white px-5 py-4 min-w-[160px] shadow-2xs">
+              <span className="text-[10px] font-mono uppercase text-neutral-500 font-semibold">Levier 2</span>
+              <p className="text-lg font-bold text-neutral-900 mt-0.5">Nature &amp; Formats</p>
+              <span className="rounded-full bg-amber-50 text-amber-800 px-2 py-0.5 text-[10px] font-medium">Bancs labo, Tableaux</span>
             </div>
 
-            <span className="text-2xl font-black text-slate-500">×</span>
+            <span className="text-2xl font-bold text-neutral-400">×</span>
 
-            <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/10 px-5 py-4">
-              <span className="text-[11px] font-mono uppercase text-slate-400">Levier 3</span>
-              <p className="text-lg sm:text-xl font-black text-white">Autorité Publisher</p>
-              <span className="text-[10px] text-emerald-300">Presse patrimoniale &gt;90 Trust</span>
+            <div className="rounded-2xl border border-emerald-200 bg-white px-5 py-4 min-w-[160px] shadow-2xs">
+              <span className="text-[10px] font-mono uppercase text-neutral-500 font-semibold">Levier 3</span>
+              <p className="text-lg font-bold text-neutral-900 mt-0.5">Autorité Publisher</p>
+              <span className="rounded-full bg-emerald-50 text-emerald-800 px-2 py-0.5 text-[10px] font-medium">Presse &gt;90 Trust</span>
             </div>
 
-            <span className="text-2xl font-black text-slate-500">×</span>
+            <span className="text-2xl font-bold text-neutral-400">×</span>
 
-            <div className="rounded-2xl border border-indigo-500/30 bg-indigo-500/10 px-5 py-4">
-              <span className="text-[11px] font-mono uppercase text-slate-400">Levier 4</span>
-              <p className="text-lg sm:text-xl font-black text-white">Volume &amp; Crawl</p>
-              <span className="text-[10px] text-indigo-300">Saturation multi-angles</span>
+            <div className="rounded-2xl border border-indigo-200 bg-white px-5 py-4 min-w-[160px] shadow-2xs">
+              <span className="text-[10px] font-mono uppercase text-neutral-500 font-semibold">Levier 4</span>
+              <p className="text-lg font-bold text-neutral-900 mt-0.5">Volume &amp; Crawl</p>
+              <span className="rounded-full bg-indigo-50 text-indigo-800 px-2 py-0.5 text-[10px] font-medium">Saturation multi-angles</span>
             </div>
           </div>
 
-          <div className="mt-8 text-center border-t border-white/[0.08] pt-6">
-            <p className="text-sm font-mono text-emerald-400 font-bold">
+          <div className="mt-8 text-center border-t border-neutral-200 pt-6">
+            <span className="rounded-full bg-emerald-100 text-emerald-900 font-mono font-bold px-6 py-2.5 text-xs sm:text-sm inline-block border border-emerald-200">
               = CONSIDÉRATION MAXIMALE &amp; RECOMMANDATION N°1 DANS LES LLMS
-            </p>
+            </span>
           </div>
         </div>
 
         {/* The Pipeline Architecture Graphic */}
-        <div className="mt-12 rounded-2xl border border-white/10 bg-[#0E1118] p-6 text-center">
-          <p className="text-xs font-mono text-slate-400 uppercase tracking-wider mb-4">
+        <div className="rounded-3xl border border-neutral-200 bg-[#FAFAF9] p-8 shadow-xs mb-14 text-center">
+          <p className="text-xs font-mono text-neutral-500 uppercase tracking-wider mb-5 font-semibold">
             ARCHITECTURE DU FLUX : DE LA PUBLICATION DE PRESSE À LA RÉPONSE DE L'AGENT IA
           </p>
           <img 
-            src="/illustrations/rag-pipeline.svg" 
+            src="/illustrations/rag-inference-flow.svg" 
             alt="Pipeline RAG presse et bots IA" 
-            className="w-full max-h-[360px] object-contain mx-auto"
+            className="w-full max-h-[320px] object-contain mx-auto"
           />
         </div>
 
-        {/* SEO vs GEO Contrast Table */}
-        <div className="mt-16">
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-white text-center">
-            Pourquoi le SEO traditionnel est mort face au GEO Média
-          </h3>
-
-          <div className="mt-8 overflow-x-auto">
-            <table className="w-full text-left border-collapse rounded-2xl overflow-hidden border border-white/10 bg-[#0E1118]">
-              <thead>
-                <tr className="border-b border-white/10 bg-black/40 text-xs uppercase font-mono tracking-wider">
-                  <th className="p-4 sm:p-5 text-slate-400">Critère Stratégique</th>
-                  <th className="p-4 sm:p-5 text-red-400">SEO Classique (2015 - 2024)</th>
-                  <th className="p-4 sm:p-5 text-blue-400">GEO Média AnswerPress (2025 - 2027)</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/[0.06] text-xs sm:text-sm">
-                <tr>
-                  <td className="p-4 sm:p-5 font-bold text-white">Objectif Final</td>
-                  <td className="p-4 sm:p-5 text-slate-300">Être cliqué parmi 10 liens bleus</td>
-                  <td className="p-4 sm:p-5 text-emerald-300 font-semibold">Être la réponse unique et le choix conseillé</td>
-                </tr>
-                <tr>
-                  <td className="p-4 sm:p-5 font-bold text-white">Source de Confiance</td>
-                  <td className="p-4 sm:p-5 text-slate-300">Backlinks sur blogs satellites ou PBNs</td>
-                  <td className="p-4 sm:p-5 text-emerald-300 font-semibold">Presse patrimoniale d'autorité (Les Numériques, Marmiton)</td>
-                </tr>
-                <tr>
-                  <td className="p-4 sm:p-5 font-bold text-white">Fréquence de Crawl</td>
-                  <td className="p-4 sm:p-5 text-slate-300">Googlebot passe 1 fois par mois</td>
-                  <td className="p-4 sm:p-5 text-emerald-300 font-semibold">GPTBot &amp; PerplexityBot crawlent toutes les 15 minutes</td>
-                </tr>
-                <tr>
-                  <td className="p-4 sm:p-5 font-bold text-white">Comportement Utilisateur</td>
-                  <td className="p-4 sm:p-5 text-slate-300">Navigation et comparaison manuelle longue</td>
-                  <td className="p-4 sm:p-5 text-emerald-300 font-semibold">47% achètent directement après recommandation du bot</td>
-                </tr>
-                <tr>
-                  <td className="p-4 sm:p-5 font-bold text-white">Format Privilégié</td>
-                  <td className="p-4 sm:p-5 text-slate-300">Articles kilométriques farcis de mots-clés</td>
-                  <td className="p-4 sm:p-5 text-emerald-300 font-semibold">Infiltrations, tableaux comparatifs, FAQ et bancs d'essai</td>
-                </tr>
-                <tr>
-                  <td className="p-4 sm:p-5 font-bold text-white">Mesure du Succès</td>
-                  <td className="p-4 sm:p-5 text-slate-300">Positions de mots-clés (SERP)</td>
-                  <td className="p-4 sm:p-5 text-emerald-300 font-semibold">Taux de présence dans les réponses &amp; Part de Voix IA</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        {/* SEO vs GEO Comparison Table with Rounded Pills */}
+        <div className="overflow-x-auto rounded-3xl border border-neutral-200 bg-white shadow-xs">
+          <table className="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr className="border-b border-neutral-200 bg-neutral-50 text-[11px] uppercase font-mono tracking-wider">
+                <th className="p-5 text-neutral-500">Critère Stratégique</th>
+                <th className="p-5 text-red-700">SEO Classique (2015 - 2024)</th>
+                <th className="p-5 text-blue-700 font-bold">GEO Média AnswerPress (2025 - 2027)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-neutral-100">
+              <tr>
+                <td className="p-5 font-bold text-neutral-900">Objectif Final</td>
+                <td className="p-5 text-neutral-600">Être cliqué parmi 10 liens bleus</td>
+                <td className="p-5 text-emerald-800 font-semibold">Être la réponse unique et le choix conseillé</td>
+              </tr>
+              <tr>
+                <td className="p-5 font-bold text-neutral-900">Source de Confiance</td>
+                <td className="p-5 text-neutral-600">Backlinks sur blogs satellites ou PBNs</td>
+                <td className="p-5 text-emerald-800 font-semibold">Presse patrimoniale d'autorité (Les Numériques, Marmiton)</td>
+              </tr>
+              <tr>
+                <td className="p-5 font-bold text-neutral-900">Fréquence de Crawl</td>
+                <td className="p-5 text-neutral-600">Googlebot passe 1 fois par mois</td>
+                <td className="p-5 text-emerald-800 font-semibold">GPTBot &amp; PerplexityBot crawlent toutes les 15 minutes</td>
+              </tr>
+              <tr>
+                <td className="p-5 font-bold text-neutral-900">Comportement Utilisateur</td>
+                <td className="p-5 text-neutral-600">Navigation et comparaison manuelle longue</td>
+                <td className="p-5 text-emerald-800 font-semibold">47% achètent directement après recommandation du bot</td>
+              </tr>
+              <tr>
+                <td className="p-5 font-bold text-neutral-900">Format Privilégié</td>
+                <td className="p-5 text-neutral-600">Articles kilométriques farcis de mots-clés</td>
+                <td className="p-5 text-emerald-800 font-semibold">Infiltrations, tableaux comparatifs, FAQ et bancs d'essai</td>
+              </tr>
+              <tr>
+                <td className="p-5 font-bold text-neutral-900">Mesure du Succès</td>
+                <td className="p-5 text-neutral-600">Positions de mots-clés (SERP)</td>
+                <td className="p-5 text-emerald-800 font-semibold">Taux de présence dans les réponses &amp; Part de Voix IA</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       </div>
