@@ -4,15 +4,15 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
 
-  /* Palette « media kit presse » */
-  --color-paper: #f5f0e8;
-  --color-paper-alt: #ece4d7;
-  --color-ink: #17181d;
-  --color-graphite: #4b4f58;
-  --color-stone: #82858e;
-  --color-press: #b3242b;
-  --color-press-dark: #8e1b21;
-  --color-line: rgba(23, 24, 29, 0.16);
+  /* Palette moderne, lumineuse et contrastée (fin du beige jauni) */
+  --color-paper: #ffffff;
+  --color-paper-alt: #f8fafc;
+  --color-ink: #09090b;
+  --color-graphite: #475569;
+  --color-stone: #94a3b8;
+  --color-press: #dc2626;
+  --color-press-dark: #b91c1c;
+  --color-line: rgba(15, 23, 42, 0.1);
 }
 
 @layer base {
@@ -36,9 +36,8 @@
 .press-title {
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.06;
-  color: var(--color-ink);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
 }
 
 .press-eyebrow {

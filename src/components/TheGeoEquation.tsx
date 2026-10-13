@@ -8,31 +8,29 @@ export default function TheGeoEquation() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* En-tête */}
         <div className="max-w-3xl">
-          <p className="press-eyebrow">Méthodologie & science du GEO</p>
+          <p className="press-eyebrow">Google classique vs Recommandation IA</p>
           <h2 className="press-title mt-5 text-3xl sm:text-5xl">
-            La nouvelle équation du
+            Pourquoi le SEO classique
             <br />
-            référencement par l&apos;IA.
+            ne suffit plus en 2026.
           </h2>
-          <p className="mt-4 text-base text-graphite max-w-2xl">
-            Pourquoi le SEO traditionnel ne fonctionne plus sur ChatGPT et Perplexity :
-            l&apos;équation d&apos;inférence RAG qui détermine la sélection d&apos;une marque par
-            les modèles.
+          <p className="mt-4 text-base text-graphite max-w-2xl leading-relaxed">
+            Google affiche 10 liens bleus. ChatGPT et Perplexity rédigent une réponse directe et ne conseillent que 2 ou 3 marques. Voici les 4 critères qu&apos;ils utilisent pour trancher :
           </p>
         </div>
 
-        {/* L'équation */}
+        {/* Les 4 piliers */}
         <div className="mt-12 press-card border-ink/25 p-8 sm:p-12">
           <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-graphite">
-            Formule d&apos;inférence RAG — Retrieval-Augmented Generation
+            Les 4 piliers analysés par l&apos;IA pour recommander votre produit
           </p>
 
           <div className="mt-8 flex flex-wrap items-stretch justify-center gap-4 sm:gap-5">
             {[
-              { lever: "Levier 1", title: "Axe Éditorial", sub: "Intentions d'achat" },
-              { lever: "Levier 2", title: "Nature & Formats", sub: "Bancs labo, tableaux" },
-              { lever: "Levier 3", title: "Autorité Publisher", sub: "Presse > 90 Trust" },
-              { lever: "Levier 4", title: "Volume & Crawl", sub: "Saturation multi-angles" },
+              { lever: "Critère 1", title: "Médias de Référence", sub: "Les Numériques, Marmiton" },
+              { lever: "Critère 2", title: "Preuves Chiffrées", sub: "Tests labo et mesures réelles" },
+              { lever: "Critère 3", title: "Comparatifs Clairs", sub: "Tableaux et avantages produits" },
+              { lever: "Critère 4", title: "Fraîcheur des Infos", sub: "Articles mis à jour en 2026" },
             ].map((item, idx) => (
               <React.Fragment key={item.lever}>
                 {idx > 0 && (
@@ -53,8 +51,7 @@ export default function TheGeoEquation() {
 
           <div className="mt-8 pt-6 border-t border-ink/20 text-center">
             <p className="press-title text-base sm:text-xl">
-              = Considération maximale &{" "}
-              <span className="text-press">recommandation n°1 dans les LLMs</span>
+              = <span className="text-press">Votre marque recommandée en n°1</span> auprès des acheteurs
             </p>
           </div>
         </div>

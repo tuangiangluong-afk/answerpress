@@ -25,29 +25,27 @@ export default function Hero({ onOpenAudit, onScrollToPacks }: HeroProps) {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Proposition de valeur */}
           <div className="lg:col-span-7">
-            <p className="press-eyebrow">Generative Engine Optimization</p>
+            <p className="press-eyebrow">Recommandation d&apos;Achat sur les IA</p>
 
             <h1 className="press-title mt-6 text-[2.5rem] sm:text-6xl lg:text-[4.25rem]">
-              Ne cherchez plus à être cliqué.
+              Ne cherchez plus seulement à être cliqué.
               <br />
               <span className="text-press italic">
-                Devenez la réponse citée par les IA.
+                Soyez la marque recommandée par ChatGPT.
               </span>
             </h1>
 
             <p className="mt-8 max-w-2xl text-base sm:text-lg text-graphite leading-relaxed">
-              AnswerPress fait entrer votre marque dans les guides et bancs d&apos;essai des plus
-              grands titres de presse pour verrouiller la recommandation d&apos;achat sur{" "}
-              <strong className="text-ink">ChatGPT, Perplexity et Copilot</strong>.
+              Quand vos clients demandent à <strong className="text-ink">ChatGPT, Perplexity ou Google</strong> quel produit acheter, l&apos;IA lit la presse pour choisir. Nous publions vos produits dans les comparatifs de <strong className="text-ink">Les Numériques, Marmiton et Maison &amp; Travaux</strong> pour que l&apos;IA vous recommande en premier.
             </p>
 
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
-              <button onClick={onOpenAudit} className="btn-press btn-press-red">
-                <span>Simuler mon Indice de Citation IA</span>
+              <button onClick={onOpenAudit} className="btn-press btn-press-red shadow-md shadow-red-600/15">
+                <span>Tester mon produit gratuitement</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
               <button onClick={onScrollToPacks} className="btn-press btn-press-outline">
-                Voir les packages — dès 4 900 € HT
+                Voir les offres — dès 4 900 € HT
               </button>
             </div>
 
@@ -56,7 +54,7 @@ export default function Hero({ onOpenAudit, onScrollToPacks }: HeroProps) {
               <hr className="press-rule-double" />
               <div className="mt-5 grid grid-cols-6 gap-4">
                 {publisherLogos.map((pub) => (
-                  <div key={pub.name} className="border border-ink/15 bg-white overflow-hidden">
+                  <div key={pub.name} className="border border-ink/15 bg-white overflow-hidden shadow-xs">
                     <img
                       src={pub.img}
                       alt={pub.name}
@@ -68,12 +66,12 @@ export default function Hero({ onOpenAudit, onScrollToPacks }: HeroProps) {
               </div>
             </div>
 
-            {/* Chiffres clés */}
+            {/* Chiffres clés sans jargon */}
             <div className="mt-10 grid grid-cols-3 border-t border-ink/25">
               {[
-                { num: "12 M+", label: "Crawls IA par jour sur notre réseau" },
-                { num: "70 %", label: "Des sources ChatGPT issues des médias", accent: true },
-                { num: "10 j", label: "Déploiement clé en main, dès 4 900 € HT" },
+                { num: "70 %", label: "Des réponses d'achat ChatGPT citent la presse", accent: true },
+                { num: "35 M", label: "De Français consultent ces médias chaque mois" },
+                { num: "48 h", label: "Pour que l'IA intègre votre recommandation" },
               ].map((stat, idx) => (
                 <div
                   key={idx}

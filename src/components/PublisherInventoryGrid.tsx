@@ -270,9 +270,9 @@ export default function PublisherInventoryGrid({ onSelectMedia }: { onSelectMedi
 
               <div className="mt-4 pt-3 border-t border-ink/15 flex items-center justify-between text-[11px] text-graphite">
                 <span>{media.audience}</span>
-                <span>{media.crawls}</span>
+                <span className="text-press font-semibold">Priorité ChatGPT</span>
                 <span>
-                  Score RAG <strong className="text-ink">{media.authorityScore}</strong>
+                  Confiance IA <strong className="text-ink">{media.authorityScore}%</strong>
                 </span>
               </div>
 

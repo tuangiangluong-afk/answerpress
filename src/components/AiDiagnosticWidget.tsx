@@ -98,9 +98,7 @@ export default function AiDiagnosticWidget({ onSuccessLead }: AiDiagnosticWidget
             de votre marque ?
           </h2>
           <p className="mt-4 text-base text-graphite max-w-2xl">
-            Évaluez en 30 secondes votre{" "}
-            <strong className="text-ink">Indice de Considération LLM</strong> face à vos deux
-            principaux concurrents. Estimation indicative.
+            Découvrez en 30 secondes si votre marque est recommandée par l&apos;IA face à vos deux principaux concurrents. Simulation gratuite et instantanée.
           </p>
         </div>
 

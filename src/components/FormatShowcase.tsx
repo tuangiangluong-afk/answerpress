@@ -6,39 +6,39 @@ export default function FormatShowcase() {
   const formats = [
     {
       num: "01",
-      name: "L'Infiltration de Guides Existants",
+      name: "La 1ère place dans les guides existants",
       image: "/media/decks/tefal-deck-1.png",
-      desc: "Nous mettons à jour un article pilier existant (ex : « Les meilleurs Airfryers 2026 »), déjà crawlé plusieurs fois par jour par GPTBot. Votre produit y est inséré dans le top 3, sans attendre des semaines d'indexation.",
+      desc: "Votre produit est inséré directement dans les guides d'achat déjà les plus consultés (ex : « Les meilleurs Airfryers 2026 »). Vous captez immédiatement les recommandations de l'IA sans attendre.",
     },
     {
       num: "02",
-      name: "L'Article GEO Natif RAG",
+      name: "L'article test dédié par la rédaction",
       image: "/media/tefal/image57.png",
-      desc: "Rédigé par des journalistes experts selon les critères d'extraction sémantique des LLMs : structure en chunks, micro-résumés, données techniques chiffrées.",
+      desc: "Rédigé par les journalistes experts du média : mise en avant de vos points forts, photos en situation réelle et avis tranché pour guider le choix des acheteurs.",
     },
     {
       num: "03",
-      name: "Le Tableau Top Position",
+      name: "Le tableau comparatif en tête d'article",
       image: "/media/tefal/image59.png",
-      desc: "Les modèles d'IA générative ingèrent en priorité les matrices comparatives. Votre produit est placé en haut du tableau, avec son lien marchand affilié ou direct.",
+      desc: "Les IA adorent les tableaux pour comparer les produits. Le vôtre est placé en haut du comparatif avec son prix, ses avantages et le lien direct d'achat.",
     },
     {
       num: "04",
-      name: "Le Banc d'Essai Labo",
+      name: "Le test en laboratoire certifié",
       image: "/media/decks/les-numeriques-deck-2.png",
-      desc: "Mesures objectives, protocole de test rigoureux et notation indépendante. L'IA a besoin de critères vérifiables pour justifier sa recommandation.",
+      desc: "Mesures scientifiques réelles (autonomie, puissance, bruit) et notation indépendante. Des preuves concrètes et indiscutables pour convaincre l'IA.",
     },
     {
       num: "05",
-      name: "La FAQ Conversationnelle",
+      name: "Les réponses aux questions d'achat",
       image: "/media/decks/prime-days-2.png",
-      desc: "Alimente directement le robot sur les questions d'arbitrage : « Quels sont les défauts ? Est-ce facile à nettoyer ? Quel est le SAV ? »",
+      desc: "L'article répond précisément aux doutes des acheteurs : « Quels sont les défauts ? Est-ce facile à nettoyer ? Que vaut le service après-vente ? »",
     },
     {
       num: "06",
-      name: "Le Label & Prix Éditorial",
+      name: "Le label officiel de la rédaction",
       image: "/media/decks/prime-days-3.png",
-      desc: "L'attribution d'une distinction officielle (« Lauréat Maison & Travaux », « Recommandé par Les Numériques ») : un signal de confiance irréfutable pour le modèle.",
+      desc: "L'attribution d'un macaron officiel (« Recommandé par Les Numériques », « Choix Maison & Travaux ») réutilisable sur vos packagings et vos fiches e-commerce.",
     },
   ];
 
@@ -46,11 +46,11 @@ export default function FormatShowcase() {
     <section className="py-20 sm:py-24 bg-paper border-b border-ink/15">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-          <p className="press-eyebrow">Les six formats d&apos;inférence</p>
+          <p className="press-eyebrow">Nos formats éditoriaux</p>
           <h2 className="press-title mt-5 text-3xl sm:text-5xl">
-            Un arsenal éditorial conçu
+            6 formats dans la presse pour faire
             <br />
-            pour être aspiré par l&apos;IA.
+            recommander votre produit.
           </h2>
         </div>
 
